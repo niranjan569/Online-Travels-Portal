@@ -1,0 +1,50 @@
+/* *{margin: 0px;padding: 0px} */
+body{
+  background-size: 100%;
+  background-clip:content-box;
+  background-image: url(images/Pink.jpg);
+}
+#hda
+{
+  font-size: 100px;
+  font-family: Lobster;
+  color: #ffc266;
+}
+#hd
+{
+	color: #ff1a66;
+}
+#hd1{
+  margin-bottom: 20px;
+  margin-top: 20px;
+ }
+ .bus-table{
+ 	width: 80%;
+ 	margin-top: 20px;
+ 	color: red;
+ }
+.sec
+{
+  padding: 70px;
+  top: 50px;
+  margin-top: 10px;
+}
+.login_form
+{
+  border-radius: 10px;
+  background-color:#E8EAF6;
+  padding: 25px;
+}
+.pro-form
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#btn
+{
+  margin-left: 40px;
+}
+@font-face {
+    font-family: myFont;
+    src: url(fonts/ANGEL___.otf);
+}

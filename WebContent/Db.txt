@@ -1,0 +1,56 @@
+INSERT ALL 
+    INTO buses 
+         VALUES ('Punganur','Chennai','6:00AM','11:00AM',5760)
+    INTO buses 
+         VALUES ('Punganur','Chennai','12:00PM','5:00PM',5761)
+    INTO buses 
+         VALUES ('Punganur','Chennai','10:00PM','4:00AM',5762)
+    INTO buses 
+         VALUES ('Chennai','Punganur','6:00AM','11:00AM',5763)
+    INTO buses 
+         VALUES ('Chennai','Punganur','12:00PM','5:00PM',5764)
+    INTO buses 
+         VALUES ('Chennai','Punganur','10:00PM','4:00AM',5765)
+    INTO buses 
+         VALUES ('Punganur','Hyderabad','7:00PM','8:00AM',6760)
+    INTO buses 
+         VALUES ('Punganur','Hyderabad','8:00PM','9:00AM',6761)
+    INTO buses 
+         VALUES ('Hyderabad','Punganur','5:00PM','6:00AM',6762)
+    INTO buses 
+         VALUES ('Hyderabad','Punganur','7:00PM','8:00AM',6763)
+    INTO buses 
+         VALUES ('Yanam','Hyderabad','7:00PM','8:00AM',7270)
+    INTO buses 
+         VALUES ('Yanam','Hyderabad','6:00PM','5:00AM',7271)
+    INTO buses 
+         VALUES ('Hyderabad','Chennai','5:00PM','6:00AM',8760)
+    INTO buses 
+         VALUES ('Hyderabad','Chennai','7:00PM','8:00AM',8761)
+    INTO buses 
+         VALUES ('Chennai','Hyderabad','6:00AM','11:00AM',8763)
+    INTO buses 
+         VALUES ('Chennai','Hyderabad','8:00AM','1:00PM',8762)
+SELECT * FROM dual  ;
+-------------------------Buses table--------------------------------------------
+Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ FROM_LOC                                           VARCHAR2(30)
+ TO_LOC                                             VARCHAR2(30)
+ DEPARTURE                                          VARCHAR2(10)
+ ARRIVAL                                            VARCHAR2(10)
+ SERVICE_NO                                NOT NULL NUMBER(38)
+
+---------------------------------------------------------------------------------
+------------------------User table-----------------------------------------------
+
+Name                                      Null?    Type
+------------------------------------------- -------- ----------------------------
+ USERNAME                                           VARCHAR2(30)
+ EMAIL                                              VARCHAR2(30)
+ PASSWORD                                           VARCHAR2(30)
+ GENDER                                             VARCHAR2(10)
+
+---------------------------------------------------------------------------------
+
+create table bookings(name varchar2(10),service_no number(38) primary key);
