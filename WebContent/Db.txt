@@ -54,3 +54,7 @@ Name                                      Null?    Type
 ---------------------------------------------------------------------------------
 
 create table bookings(name varchar2(10),service_no number(38) primary key);
+
+create table buses (FROM_LOC VARCHAR2(30),TO_LOC VARCHAR2(30),DEPARTURE VARCHAR2(10),ARRIVAL VARCHAR2(10),SERVICE_NO NUMBER(38) NOT NULL);
+
+create table user(USERNAME VARCHAR2(30),EMAIL VARCHAR2(30),PASSWORD VARCHAR2(30),GENDER VARCHAR2(10));
